@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Heart</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mensagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+
+        }
+
+        .heart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10rem;
+            animation: heart .5s infinite alternate linear;
+        }
+
+        @keyframes heart {
+            from {
+                transform: scale(.7);
+            }to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="mensagem">Estou morrendo de saudades</div>
+        <div class="heart">❤️</div>
+    </section>
+
+</body>
+</html>
